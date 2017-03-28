@@ -1,0 +1,19 @@
+{
+  "name": "paint-selection",
+  "version": "1.0.0",
+  "description": "A utility function for adding material design ripple effect",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/klandell/paint-selection.git"
+  },
+  "author": "Kyle Landell <kyle.landell@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/klandell/paint-selection/issues"
+  },
+  "homepage": "https://github.com/klandell/paint-selection#readme"
+}
