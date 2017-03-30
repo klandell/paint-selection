@@ -1,0 +1,41 @@
+@-webkit-keyframes s-ink-ripple {
+    100% {
+        opacity: 0;
+        -webkit-transform: scale(2.5);
+    }
+}
+@-moz-keyframes s-ink-ripple {
+    100% {
+        opacity: 0;
+        -moz-transform: scale(2.5);
+    }
+}
+@-o-keyframes s-ink-ripple {
+    100% {
+        opacity: 0;
+        -o-transform: scale(2.5);
+    }
+}
+@keyframes s-ink-ripple {
+    100% {
+        opacity: 0;
+        transform: scale(2.5);
+    }
+}
+
+.ps-ink {
+    display: block;
+    position: absolute;
+    border-radius: 100%;
+    -moz-transform: transform(scale(0));
+    -o-transform: transform(scale(0));
+    -webkit-transform: transform(scale(0));
+    transform: transform(scale(0));
+
+    &.ps-ink-animate {
+        -webkit-animation: ps-ink-ripple 0.65s linear;
+        -moz-animation: ps-ink-ripple 0.65s linear;
+        -o-animation: ps-ink-ripple 0.65s linear;
+        animation: ps-ink-ripple 0.65s linear;
+    }
+}

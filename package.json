@@ -2,9 +2,11 @@
   "name": "paint-selection",
   "version": "1.0.0",
   "description": "A utility function for adding material design ripple effect",
-  "main": "index.js",
+  "main": "bundle.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "NODE_ENV=production webpack",
+    "postinstall": "postinstall-build bundle.js \"npm run build\""
   },
   "repository": {
     "type": "git",
@@ -15,5 +17,25 @@
   "bugs": {
     "url": "https://github.com/klandell/paint-selection/issues"
   },
-  "homepage": "https://github.com/klandell/paint-selection#readme"
+  "homepage": "https://github.com/klandell/paint-selection#readme",
+  "devDependencies": {
+    "babel-core": "^6.24.0",
+    "babel-loader": "^6.4.1",
+    "babel-polyfill": "^6.23.0",
+    "babel-preset-es2015": "^6.24.0",
+    "css-loader": "^0.28.0",
+    "eslint": "^3.18.0",
+    "eslint-config-airbnb": "^14.1.0",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-jsx-a11y": "^4.0.0",
+    "eslint-plugin-react": "^6.10.3",
+    "node-sass": "^4.5.2",
+    "pre-commit": "^1.2.2",
+    "sass-loader": "^6.0.3",
+    "style-loader": "^0.16.1",
+    "webpack": "^2.3.2"
+  },
+  "dependencies": {
+    "postinstall-build": "^3.0.0"
+  }
 }

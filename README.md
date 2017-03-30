@@ -1,21 +1,34 @@
 # Paint Selection
 A simple utility function for adding creating a material design ripple effect
 
-Example usage in React
+### function arguments
+##### e
+Type `Event`, Required `True`
+The click event for the element to be painted
+
+##### color
+Type `String`, Required `False`
+The color to paint the element. Defaults to `#A239CA`.
+
+### CSS classes used by Paint Selection
+* ps-ink
+* ps-ink-animate
+* s-ink-ripple (keyframes)
+
+### Example usage in React
 ```javascript
 import React from 'react';
 import paintSelection from 'paint-selection';
 
 export default class Foo extends React.Component {
     onClick(e) {
-        paintSelection(e);
+        paintSelection(e, '#4717F6');
         // handle click event
     }
 
     render() {
         return (
-            <div class="btn"
-                onClick={e => this.onClick(e)}>
+            <div className="btn" onClick={e => this.onClick(e)}>
                 <a>foo</a>
             </div>
         );
@@ -23,11 +36,8 @@ export default class Foo extends React.Component {
 }
 ```
 
-Example sass for styling the ripple
+### Example sass for containing the ripple within the button
 ```sass
-$ui-color-1: #0E0B16;
-$ui-color-2: #A239CA;
-
 div.btn {
     position: relative;
     overflow: hidden;
@@ -35,25 +45,6 @@ div.btn {
     a {
         position: relative;
         overflow: hidden;
-    }
-}
-
-.ink {
-    display: block;
-    position: absolute;
-    background: rgba($ui-color-2, 0.5);
-    border-radius: 100%;
-    transform: scale(0);
-
-    &.animate {
-        animation: ripple 0.65s linear;
-    }
-}
-
-@keyframes ripple {
-    100% {
-        opacity: 0;
-        transform: scale(2.5);
     }
 }
 ```
