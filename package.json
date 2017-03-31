@@ -1,6 +1,6 @@
 {
   "name": "paint-selection",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "A utility function for adding material design ripple effect",
   "main": "bundle.js",
   "scripts": {
