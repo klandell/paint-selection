@@ -1,14 +1,19 @@
 # Paint Selection
+[![npm](https://img.shields.io/npm/v/paint-selection.svg)](https://www.npmjs.com/package/paint-selection)
+[![David](https://img.shields.io/david/klandell/paint-selection.svg)](https://david-dm.org/klandell/paint-selection)
+[![David](https://img.shields.io/david/dev/klandell/paint-selection.svg)](https://david-dm.org/klandell/paint-selection?type=dev)
+[![npm](https://img.shields.io/npm/l/paint-selection.svg)](https://github.com/klandell/paint-selection/blob/master/LICENSE)
+
 A simple utility function for adding creating a material design ripple effect
 
-### function arguments
-##### e
-Type `Event`, Required `True`
-The click event for the element to be painted
+### Features
+#### paintSelection
+Type `Function`
+Adds a material design ripple effect to currentTarget of an event
 
-##### color
-Type `String`, Required `False`
-The color to paint the element. Defaults to `#A239CA`.
+**Parameters**
+* **e** - Type `Event`, Required `True` - The click event for the element to be painted
+* **color** - Type `String`, Required `False` - The color to paint the element. Defaults to `#A239CA`.
 
 ### CSS classes used by Paint Selection
 * ps-ink

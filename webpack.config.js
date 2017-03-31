@@ -45,6 +45,8 @@ module.exports = {
     },
     output: {
         filename: 'bundle.js',
+        library: 'paintSelection',
+        libraryTarget: 'commonjs-module',
         path: __dirname,
     },
     plugins: [
