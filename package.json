@@ -1,6 +1,6 @@
 {
   "name": "paint-selection",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "A utility function for adding material design ripple effect",
   "main": "bundle.js",
   "scripts": {
@@ -35,12 +35,12 @@
     "webpack": "^2.3.2"
   },
   "dependencies": {
-      "postinstall-build": "^3.0.0"
+    "postinstall-build": "^3.0.0"
   },
   "keywords": [
-      "Material Design",
-      "Ripple",
-      "Effect",
-      "React"
+    "Material Design",
+    "Ripple",
+    "Effect",
+    "React"
   ]
 }
