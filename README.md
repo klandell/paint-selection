@@ -12,8 +12,10 @@ Type `Function`
 Adds a material design ripple effect to currentTarget of an event
 
 **Parameters**
-* **e** - Type `Event`, Required `True` - The click event for the element to be painted
-* **color** - Type `String`, Required `False` - The color to paint the element. Defaults to `#A239CA`.
+* **e** - Type `Event`, Required `True` - The click event for the element to be painted.
+* **config** - Type `Object`, Required `False` - Configuration settings for the ripple.
+* **config.color** - Type `String`, Required `False` - The color to paint the element. Defaults to `#A239CA`.
+* **config.duration** - Type `Float`, Required `False` - The duration of the ripple animation. Defaults to `0.3`.
 
 ### CSS classes used by Paint Selection
 * ps-ink
@@ -27,19 +29,25 @@ import paintSelection from 'paint-selection';
 
 export default class Foo extends React.Component {
     onClick(e) {
-        paintSelection(e, '#4717F6');
+        paintSelection(e, {
+            color: '#4717F6',
+            duration: .25
+        });
         // handle click event
     }
 
     render() {
         return (
-            <div className="btn" onClick={e => this.onClick(e)}>
+            <div className="btn"
+                role="button"
+                onClick={e => this.onClick(e)}>
                 <a>foo</a>
             </div>
         );
     }
 }
 ```
+Note: It is recommended that the button content is wrapped in an anchor tag.  This prevents the ripple effect from appearing overtop of the button text.
 
 ### Example sass for containing the ripple within the button
 ```sass

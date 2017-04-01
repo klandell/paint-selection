@@ -35,6 +35,12 @@
     "webpack": "^2.3.2"
   },
   "dependencies": {
-    "postinstall-build": "^3.0.0"
-  }
+      "postinstall-build": "^3.0.0"
+  },
+  "keywords": [
+      "Material Design",
+      "Ripple",
+      "Effect",
+      "React"
+  ]
 }

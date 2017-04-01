@@ -33,9 +33,9 @@
     transform: scale(0);
 
     &.ps-ink-animate {
-        -webkit-animation: ps-ink-ripple 0.65s linear;
-        -moz-animation: ps-ink-ripple 0.65s linear;
-        -o-animation: ps-ink-ripple 0.65s linear;
-        animation: ps-ink-ripple 0.65s linear;
+        -webkit-animation: ps-ink-ripple linear;
+        -moz-animation: ps-ink-ripple linear;
+        -o-animation: ps-ink-ripple linear;
+        animation: ps-ink-ripple linear;
     }
 }
